@@ -104,7 +104,7 @@ function Index() {
         </div>
       )}
       {view === "moon" && <MoonWorld onDiscover={() => setView("artifact")} onBack={home} />}
-      {view === "artifact" && <Artifact onReturn={() => setView("moon")} />}
+      {view === "artifact" && <Artifact onReturn={home} />}
       {view === "mars" && <MarsPreview onReturn={home} />}
     </main>
   );
