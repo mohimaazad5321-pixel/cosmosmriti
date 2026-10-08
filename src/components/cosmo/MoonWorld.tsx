@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import moon from "@/assets/moon.jpg";
-import { Button } from "@/components/ui/button";
 
 export function MoonWorld({ onDiscover, onBack }: { onDiscover: () => void; onBack: () => void }) {
   const [rot, setRot] = useState(0);
@@ -62,9 +61,9 @@ export function MoonWorld({ onDiscover, onBack }: { onDiscover: () => void; onBa
       </div>
       <p className="mt-10 text-sm text-muted-foreground">Drag to spin · scroll to zoom · tap the glowing light</p>
       {!diving && (
-        <Button variant="ghost" className="mt-2 text-primary" onClick={discover}>
+        <button className="btn-ghost mt-3" onClick={discover}>
           Discover
-        </Button>
+        </button>
       )}
     </section>
   );

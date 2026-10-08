@@ -138,3 +138,6 @@
 @utility animate-pulse-ring { animation: pulse-ring 1.8s ease-out infinite; }
 @utility animate-scan { animation: scan 1.6s linear infinite; }
 @utility animate-fade-up { animation: fade-up .8s ease-out both; }
+
+@utility btn-primary { display:inline-flex; align-items:center; gap:.5rem; border-radius:999px; padding:.75rem 1.5rem; font-family:"Unbounded",sans-serif; font-size:.8rem; letter-spacing:.12em; background:var(--primary); color:var(--primary-foreground); box-shadow:var(--glow-moon); transition:transform .2s; &:hover{transform:scale(1.05)} }
+@utility btn-ghost { display:inline-flex; align-items:center; gap:.5rem; border-radius:999px; padding:.65rem 1.4rem; font-family:"Unbounded",sans-serif; font-size:.75rem; letter-spacing:.12em; border:1px solid var(--border); color:var(--primary); transition:background .2s; &:hover{background:var(--muted)} }
