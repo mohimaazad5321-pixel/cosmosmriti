@@ -196,9 +196,16 @@ export function Artifact({ onReturn }: { onReturn: () => void }) {
           </div>
         </section>
 
-        <div className="text-center">
-          <button className="btn-primary" onClick={onReturn}>↩ Return to CosmoSmriti</button>
-        </div>
+        <section className="flex min-h-[70vh] flex-col items-center justify-center text-center">
+          <h2 className="bg-gradient-to-r from-primary via-foreground to-secondary bg-clip-text text-5xl font-extrabold tracking-widest text-transparent sm:text-7xl">COSMOSMRITI</h2>
+          <p className="mt-4 font-display text-xl sm:text-2xl">“Every Mission Leaves a Memory.”</p>
+          <div className="mt-10 space-y-3 text-lg text-muted-foreground">
+            <p className="animate-fade-up">“We remember the people who explored other worlds.”</p>
+            <p className="animate-fade-up" style={{ animationDelay: "0.4s" }}>“We remember the missions.”</p>
+            <p className="animate-fade-up text-foreground" style={{ animationDelay: "0.8s" }}>“Now, let's remember what they left behind.”</p>
+          </div>
+          <button className="btn-primary mt-12 font-display tracking-[0.3em]" onClick={onReturn}>EXPLORE THE COSMOS</button>
+        </section>
       </div>
 
       {/* Guide */}
