@@ -44,6 +44,7 @@ export function Artifact({ onReturn }: { onReturn: () => void }) {
   const [flipped, setFlipped] = useState<number | null>(null);
   const [eli10, setEli10] = useState(false);
   const [bubble, setBubble] = useState(0);
+  const cur = timeline[step]!;
 
   useEffect(() => {
     const a = setTimeout(() => setPhase("found"), 2200);
@@ -128,9 +129,9 @@ export function Artifact({ onReturn }: { onReturn: () => void }) {
               ))}
             </ol>
             <div key={step} className="glass flex flex-col items-center justify-center p-10 text-center animate-fade-up">
-              <div className="text-7xl">{timeline[step].icon}</div>
-              <div className="mt-4 font-display text-xl text-primary">{timeline[step].t}</div>
-              <p className="mt-3 text-lg">{timeline[step].d}</p>
+              <div className="text-7xl">{cur.icon}</div>
+              <div className="mt-4 font-display text-xl text-primary">{cur.t}</div>
+              <p className="mt-3 text-lg">{cur.d}</p>
               <div className="mt-6 h-1 w-full overflow-hidden rounded-full bg-muted">
                 <div className="h-full bg-primary transition-all duration-700" style={{ width: `${((step + 1) / timeline.length) * 100}%` }} />
               </div>
